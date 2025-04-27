@@ -1,0 +1,86 @@
+/* Padrão de cor https://colorhunt.co/palette/1d16168e1616d84040eeeeee*/
+
+/* Definindo Fontes para o Site*/
+@font-face{
+    font-family: Lilita;
+    src: local(Lobster), url(../fonts/LilitaOne-Regular.ttf)
+}
+
+/* Definindo Padrões para o site */
+body {
+    background-color: #EEEEEE;
+    color: #1D1616;
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color:#EEEEEE;
+    font-family: Lilita;
+}
+
+/* ------------------------------------------------------------ */
+
+.nome{
+    font-size:30px;
+    float:left;
+}
+
+.topbar{
+    background-color: #8e1616f5;
+    color: #EEEEEE;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.topbar a{
+    text-decoration: none;
+    color:#EEEEEE;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    float:right;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.navbar li{
+    margin: 0 10px;
+    justify-content: right;
+
+}
+
+/* - - - - - - - --  --- -- - - - - - - - -- - - - - -- - - */
+
+.apresentacao{
+    padding: 35px;
+    font-size: 30px;
+    background-color: #D84040;
+    color: #EEEEEE;
+    width: 100vth;
+    height: 250px;
+    padding-top: 350px;
+    border: 1px solid #99c;
+    border-radius: 5px;
+}
+
+article {
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 45px;
+}
+
+/* Rodapé do site*/
+
+footer {
+    text-align: center;
+    background-color: #8E1616;
+    color: #EEEEEE;
+    padding: 2px;
+}
