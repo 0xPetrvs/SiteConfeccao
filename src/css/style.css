@@ -28,6 +28,11 @@ h1, h2 {
     float:left;
 }
 
+li:hover{
+    font-size: 21px;
+
+}
+
 .topbar{
     background-color: #8e1616f5;
     color: #EEEEEE;
