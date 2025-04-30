@@ -1,9 +1,16 @@
-/* Padrão de cor https://colorhunt.co/palette/1d16168e1616d84040eeeeee*/
+/* Padrão de cor https://colorhunt.co/palette/780c28cae0bceafaea6e8e59*/
 
 /* Definindo Fontes para o Site*/
 @font-face{
-    font-family: Lilita;
-    src: local(Lobster), url(../fonts/LilitaOne-Regular.ttf)
+    font-family: Fugaz;
+    src: local(Fugaz), url(../fonts/Fugaz_One/FugazOne-Regular.ttf)
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#6E8E59;
+    background-color: #EAFAEA;
+    text-align: center;
 }
 
 /* Definindo Padrões para o site */
@@ -13,7 +20,7 @@
 }
 
 a {
-    color:#FFF6DA;
+    color:#F2E8C6;
     text-decoration: none;
     transition:0.3s;
 }
@@ -23,16 +30,19 @@ a:hover{
 
 .logo{
     font-size: 24px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1.5px;
+    font-family: Fugaz;
+    color:#EAFAEA;
 }
 
 nav {
     display:flex;
     justify-content:space-around;
     align-items: center;
-    background:#8e1616f5;
+    background:#780C28;
     height: 20vh;
+    text-transform: uppercase;
 }
 
 .nav-list {
@@ -43,7 +53,22 @@ nav {
 .nav-list li{
     letter-spacing: 1px;
     margin-left: 32px;
+    font-size: 15px;
 }
+
+nav ul a::after{
+    content: "";
+    background-color: white;
+    height: 2px;
+    width:0%;
+    display:block;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+nav ul a:hover::after{
+    width:100%;
+}
+
 /* ------------------------------------------------------------ */
 
 .nome{
@@ -53,7 +78,7 @@ nav {
 
 .navbar a{
     text-decoration: none;
-    color:#EEEEEE;
+    color:#EAFAEA;
 }
 
 .navbar ul{
@@ -75,13 +100,13 @@ nav {
 .apresentacao{
     padding: 35px;
     font-size: 30px;
-    background-color: #D84040;
-    color: #EEEEEE;
+    background-color: #6E8E59;
+    color: #EAFAEA;
     width: 100vth;
     height: 250px;
-    padding-top: 350px;
-    border: 1px solid #99c;
-    border-radius: 5px;
+    padding-top: 100px;
+    text-align: center;
+
 }
 
 article {
@@ -90,11 +115,20 @@ article {
     padding: 45px;
 }
 
+#sobre{
+    text-align: center;
+    background-color: #CAE0BC ;
+    color:#6E8E59;
+}
+
 /* Rodapé do site*/
 
 footer {
     text-align: center;
-    background-color: #8E1616;
-    color: #EEEEEE;
-    padding: 2px;
+    color: #6E8E59;
+    font-size: 15px;
+    padding: 20px;
+}
+hr {
+    ;
 }
