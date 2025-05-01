@@ -1,6 +1,5 @@
 /* Padrão de cor https://colorhunt.co/palette/780c28cae0bceafaea6e8e59*/
 
-/* Definindo Fontes para o Site*/
 @font-face{
     font-family: Fugaz;
     src: local(Fugaz), url(../fonts/Fugaz_One/FugazOne-Regular.ttf)
@@ -13,7 +12,6 @@ body{
     text-align: center;
 }
 
-/* Definindo Padrões para o site */
 * {
     margin:0px;
     padding: 0px;
@@ -69,8 +67,6 @@ nav ul a:hover::after{
     width:100%;
 }
 
-/* ------------------------------------------------------------ */
-
 .nome{
     font-size:30px;
     float:left;
@@ -94,8 +90,6 @@ nav ul a:hover::after{
     justify-content: right;
 
 }
-
-/* - - - - - - - --  --- -- - - - - - - - -- - - - - -- - - */
 
 .apresentacao{
     padding: 35px;
@@ -121,14 +115,74 @@ article {
     color:#6E8E59;
 }
 
-/* Rodapé do site*/
-
 footer {
     text-align: center;
     color: #6E8E59;
     font-size: 15px;
     padding: 20px;
 }
-hr {
-    ;
+
+.produtos h2 p{
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+}
+.produtos p{
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.produtos .card-item{
+    background-color: #780C28;
+    color:#CAE0BC;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width:350px;
+    transition:0.4s
+}
+
+.produtos .card-item img{
+   width:150px;
+   display:block;
+   margin:10px auto;
+   border-radius: 20px;
+}
+
+.produtos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.produtos .card-item .qualidade{
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.produtos .card-item:hover{
+    background-color: #57091e;
+    margin-top:-5px;
+}
+
+.redes .icons img{
+    height:60px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.redes .icon-item{
+    margin:15px;
+    border-radius:14px;
+    text-align:center;
 }
